@@ -10,7 +10,7 @@ OpenGL shader API designed for convenience on C99
 - **Link** *ShadeLibLinkProgram*(N shaders, attrib bind), *ShadeLibBuildProgram*(vert + frag -> program)
 - **utilities** *ShadeLibFreeShader* and *ShadeLibFreeProgram*(reset to zero ID), *ShaderLibSetInteger* and *ShaderLibSetFloat*(with an inspection location
 
-###  All in one ShadeLib.h 
+***All in one ShadeLib.h***
 
 ##  Requirements
 
@@ -44,13 +44,13 @@ just install ShadeLib.h and put it into any folder
 
 ##  Warnings
 
-***Do not include <GL/glext.h>***
-***Call *gl_load_shader_api()* after creating the context***
-***Header-only and static***
+***Do not include <GL/glext.h>***  
+***Call *gl_load_shader_api()* after creating the context***  
+***Header-only and static***  
 
 
 ##  Step-by-step version
-If you need access to every step, do not use ShadeLibBuildProgram
+If you need access to every step, do not use ShadeLibBuildProgram  
 handle it manually instead.
 
 
