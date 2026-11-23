@@ -51,9 +51,8 @@ and include like
 
 ***Do not include <GL/glext.h>***  
 ***Call *gl_load_shader_api()* after creating the context***  
-***Header-only and static***  
-***This is a header-only library, but due to the use of static pointers, you should either include it in only one***`.c`***file or call ***`gl_load_shader_api()`*** in every module***  
-
+***Header-only and static***
+***This is a header-only library, but due to the use of static pointers, you should either include it in only one*** `.c` ***file or call*** `gl_load_shader_api()` ***in every module***
 
 ##  Step-by-step version
 If you need access to every step, do not use ShadeLibBuildProgram  
