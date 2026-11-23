@@ -21,7 +21,9 @@ OpenGL shader API designed for convenience on C99
 
 ##  Install
 
-just install ShadeLib.h and put it into any folder
+just install ShadeLib.h and put it into any folder  
+and include like
+`#include "shadelib.h"`
 
 ##  API at a glance
 
