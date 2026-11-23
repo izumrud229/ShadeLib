@@ -1,8 +1,8 @@
-#**ShadeLib**
+#  **ShadeLib**
 
 OpenGL shader API designed for convenience on C99
 
-##What inside?
+##  What inside?
 
 - **Loader** *glCreateShader*, *glCompileShader*, *glLinkProgram*, *glUniform** and so on through wglGetProcAddress / glXGetProcAddressARB
 - **File Reader** *ShadeLibReadStream*(any thread, socket or FILE*),  *ShadeLibReadFile*(seekable), *ShadeLibReadShader*(open + read + close)
@@ -10,9 +10,9 @@ OpenGL shader API designed for convenience on C99
 - **Link** *ShadeLibLinkProgram*(N shaders, attrib bind), *ShadeLibBuildProgram*(vert + frag -> program)
 - **utilities** *ShadeLibFreeShader* and *ShadeLibFreeProgram*(reset to zero ID), *ShaderLibSetInteger* and *ShaderLibSetFloat*(with an inspection location
 
-###All in one ShadeLib.h 
+###  All in one ShadeLib.h 
 
-##Requirements
+##  Requirements
 
 *C99 or newer*
 *An OpenGL context (created by you using GLFW, SDL, Win32, X11, or any other method).*
@@ -20,11 +20,11 @@ OpenGL shader API designed for convenience on C99
 *Windows: opengl32.lib*
 *Linux: -lGL*
 
-##Install
+##  Install
 
 just install ShadeLib.h and put it into any folder
 
-##API at a glance
+##  API at a glance
 
 *gl_load_shader_api()* Load Address GL-functions, Call once after the context has been created
 *ShadeLibBuildProgram(v, f, attrs, name)* vert + frag + attrs -> program
@@ -34,7 +34,7 @@ just install ShadeLib.h and put it into any folder
 *ShadeLibFreeProgram(&prog)* Remove the program, reset the ID
 *ShadeLibFreeShader(&sh)* Remove the shader, reset the ID
 
-###Utilities
+###  Utilities
 
 *ShaderLibUse(prog)* glUseProgram
 *ShaderLibSetInteger(prog, name, v)* glUniform1i with an inspection location
@@ -42,14 +42,14 @@ just install ShadeLib.h and put it into any folder
 *ShadeLibReadShader(path, &len)* open + read + close return malloc buffer with '\0'
 
 
-##Warnings
+##  Warnings
 
 -Do not include <GL/glext.h>
 -Call *gl_load_shader_api()* after creating the context
 -Header-only and static
 
 
-##Step-by-step version
+##  Step-by-step version
 If you need access to every step, do not use ShadeLibBuildProgram
 handle it manually instead.
 
