@@ -4,13 +4,12 @@ OpenGL shader API designed for convenience on C99
 
 ##  What inside?
 
-- **Loader** *glCreateShader*, *glCompileShader*, *glLinkProgram*, *glUniform** and so on through wglGetProcAddress / glXGetProcAddressARB
-- **File Reader** *ShadeLibReadStream*(any thread, socket or FILE*),  *ShadeLibReadFile*(seekable), *ShadeLibReadShader*(open + read + close)
-- **Compile** *ShadeLibCompileShader*, *ShadeLibCompileShaderFile* with full info log
-- **Link** *ShadeLibLinkProgram*(N shaders, attrib bind), *ShadeLibBuildProgram*(vert + frag -> program)
-- **utilities** *ShadeLibFreeShader* and *ShadeLibFreeProgram*(reset to zero ID), *ShaderLibSetInteger* and *ShaderLibSetFloat*(with an inspection location
+- **Loader** `glCreateShader`, `glCompileShader`, `glLinkProgram`, `glUniform*` and so on through wglGetProcAddress / glXGetProcAddressARB
+- **File Reader** `ShadeLibReadStream`(any thread, socket or FILE*),  `ShadeLibReadFile`(seekable), `ShadeLibReadShader`(open + read + close)
+- **Compile** `ShadeLibCompileShader`, `ShadeLibCompileShaderFile` with full info log
+- **Link** `ShadeLibLinkProgram`(N shaders, attrib bind), `ShadeLibBuildProgram`(vert + frag -> program)
+- **utilities** `ShadeLibFreeShader` and `ShadeLibFreeProgram`(reset to zero ID), `ShaderLibSetInteger` and `ShaderLibSetFloat`(with an inspection location
 
-***All in one ShadeLib.h***
 
 ##  Requirements
 
