@@ -44,9 +44,9 @@ just install ShadeLib.h and put it into any folder
 
 ##  Warnings
 
--Do not include <GL/glext.h>
--Call *gl_load_shader_api()* after creating the context
--Header-only and static
+***Do not include <GL/glext.h>***
+***Call *gl_load_shader_api()* after creating the context***
+***Header-only and static***
 
 
 ##  Step-by-step version
