@@ -26,21 +26,25 @@ just install ShadeLib.h and put it into any folder
 
 ##  API at a glance
 
-*gl_load_shader_api()*       Load Address GL-functions, Call once after the context has been created  
-*ShadeLibBuildProgram(v, f, attrs, name)*       vert + frag + attrs -> program  
-*ShadeLibCompileShaderFile(type, path)*       compile shader from file  
-*ShadeLibCompileShader(type, src, len, name)*       Compile from memory (with explicit length)  
-*ShadeLibLinkProgram(shaders, count, attrs, name)*       Link N shaders  
-*ShadeLibFreeProgram(&prog)*       Remove the program, reset the ID  
-*ShadeLibFreeShader(&sh)*        Remove the shader, reset the ID  
 
-###  Utilities
+| function | description |
+|---|---|
+| `gl_load_shader_api()` | Load Address GL-functions, call once after the context has been created |
+| `ShadeLibBuildProgram(v, f, attrs, name)` | vert + frag + attrs -> program |
+| `ShadeLibCompileShaderFile(type, path)` | compile shader from file |
+| `ShadeLibCompileShader(type, src, len, name)` | Compile from memory (with explicit length) |
+| `ShadeLibLinkProgram(shaders, count, attrs, name)` | Link N shaders |
+| `ShadeLibFreeProgram(&prog)` | Remove the program, reset the ID |
+| `ShadeLibFreeShader(&sh)` | Remove the shader, reset the ID |
 
-*ShaderLibUse(prog)*       glUseProgram  
-*ShaderLibSetInteger(prog, name, v)*       glUniform1i with an inspection location  
-*ShaderLibSetFloat(prog, name, v)*       glUniform1f with an inspection  location  
-*ShadeLibReadShader(path, &len)*       open + read + close return malloc buffer with '\0'  
+## Utilities
 
+| function | description |
+|---|---|
+| `ShaderLibUse(prog)` | glUseProgram |
+| `ShaderLibSetInteger(prog, name, v)` | glUniform1i with an inspection location |
+| `ShaderLibSetFloat(prog, name, v)` | glUniform1f with an inspection location |
+| `ShadeLibReadShader(path, &len)` | open + read + close, return malloc buffer with `'\0'` |
 
 ##  Warnings
 
