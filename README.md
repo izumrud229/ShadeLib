@@ -8,7 +8,7 @@ OpenGL shader API designed for convenience on C99
 - **File Reader** `ShadeLibReadStream`(any thread, socket or FILE*),  `ShadeLibReadFile`(seekable), `ShadeLibReadShader`(open + read + close)
 - **Compile** `ShadeLibCompileShader`, `ShadeLibCompileShaderFile` with full info log
 - **Link** `ShadeLibLinkProgram`(N shaders, attrib bind), `ShadeLibBuildProgram`(vert + frag -> program)
-- **utilities** `ShadeLibFreeShader` and `ShadeLibFreeProgram`(reset to zero ID), `ShaderLibSetInteger` and `ShaderLibSetFloat`(with an inspection location
+- **utilities** `ShadeLibFreeShader` and `ShadeLibFreeProgram`(reset to zero ID), `ShaderLibSetInteger` and `ShaderLibSetFloat`(with an inspection location)
 
 
 ##  Requirements
